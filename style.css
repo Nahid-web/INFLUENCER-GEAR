@@ -1,0 +1,365 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+body {
+    /* background-color:#AAAAAA;  */
+    /* font-family: 'Poppins'; */
+}
+
+/* navbar display flex */
+nav {
+    display: flex;
+    justify-content: space-between;
+    margin:50px 200px;
+    
+   
+}
+
+
+.navbar-top-right {
+    display: flex;
+    
+}
+
+/* top right navbar = display flex */
+.navbar-top-right ul {
+    display: flex;
+    list-style: none;
+
+   
+}
+
+
+
+/* top right navbar anchor tag = removing text decoration & color */
+.navbar-top-right ul li a,i{
+    text-decoration: none;
+    color: black;
+    margin: 0 20px;
+}
+
+/*nav bottom  =  center */
+.navbar-bottom{
+    align-items: center;
+    
+   
+}
+
+.navbar-bottom-left {
+    width: 350px;
+}
+
+/* nav bottom left */
+.navbar-bottom-left h1 ,p,button{
+    margin: 10px 0;
+    
+}
+
+
+/* bottom right nav img width small */
+.navbar-bottom-right img {
+    width: 80%;
+    background-image: url(/images/Circle\ design.svg);
+    background-size: 100%;
+    
+    animation: transform 4s ease-in-out 1s infinite  ;
+    
+  
+}
+
+/* Animation keyframe in bottom right navbar camera */
+@keyframes transform {
+    0% {
+        scale: 1;
+    
+    }
+   
+    50% {
+        scale: .7;
+    }
+    
+    100% {
+        transform: rotate(360deg);
+        scale: 1;
+        
+    }
+}
+/* prebook Button */
+button {
+    background-color: #e5330b;
+    color: white;
+    border: none;
+    height: 30px;
+    padding: 5px 20px;
+    text-align: center;
+    font-size: 15px;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: white;
+    color: #e5330b;
+}
+
+/* button prebook */
+.pre-icon {
+    color: white;
+    margin-: 5px;
+
+}
+
+/* loges section = center & border */
+.section-loges {
+    text-align: center;
+    width: 70%;
+    margin: 0px auto;
+}
+
+/* section loges gradian border */
+.border-hr {
+    background: linear-gradient(to right, red, yellow);
+    height: 1px;
+    margin: 10px auto;
+    width: 85%;
+}
+/* loges section img = margin & size */
+.section-loges img{
+    
+    margin: 5px 20px;
+   
+}
+
+
+/* Popular Section */
+.section-popular {
+    margin: 10px 200px;
+}
+
+/* Popualr section Heading */
+.popular-heading {
+    text-align: center;
+    margin: 60px auto 40px auto ;
+}
+
+/* Popular Container Box gridsw */
+.popular-container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    justify-items: center;
+    
+}
+
+/* Ratting Star Start*/
+.rating i {
+    margin: 5px 2px;
+}
+
+.fa-star , .fa-star-half-stroke {
+    color: orange;
+}
+
+.rating-number {
+    
+}
+/* Rating star finished */
+
+/* popualr see more */
+.popular-see-more  {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.popular-see-more a {
+    text-decoration: none;
+    color: #e5330b;
+}
+/* see more right arrow icon */
+.see-icon {
+    color: #e5330b;
+    margin: 5px;
+    font-weight:bolder;
+}
+/* Feather section */
+.section-feather {
+    display: flex;
+    justify-content: space-between;
+    margin: 150px 200px;
+
+}
+/* feather  section text details centred */
+.feather-details {
+    margin: auto 0 auto 100px;
+   
+}
+
+footer {
+    background-color: #191919;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+    color: white;
+    height: 150px;
+    
+   
+}
+
+.copyright p {
+    text-align: center;
+}
+
+/* Fotter icon */
+.footer-icon a i {
+    color: white;
+    margin: 5px 10px;
+}
+
+.footer-icon a{
+    text-decoration: none;
+}
+
+h1 {
+    font-size: 30px;
+}
+
+h2 {
+    font-size: 25px;
+    
+}
+
+
+
+
+
+/* Responsive for mobile (max-width:600px) */
+@media (max-width: 600px) {
+   
+
+    nav {
+        
+        flex-direction: column;
+        align-items: center;
+        
+
+    }
+
+    .navbar-top-right ul{
+        margin-top:5px;
+        margin-bottom: 5px;
+    }
+
+    .navbar-top-right {
+        flex-direction: column;
+        align-items: center;
+        
+    }
+    
+    .navbar-bottom-left {
+        text-align: center;
+        min-width: 200px;
+    }
+
+    .navbar-bottom-right img {
+        min-width: 200px;
+    }
+
+    .section-loges img{
+        margin: 10px 5px;
+        width: 30%;
+        
+    }
+   
+
+    .section-popular {
+        text-align: center;
+      
+        margin: 5px auto;
+    }
+    .popular-container {
+        display: block;
+      
+    }
+
+    .box {
+        margin-top: 30px;
+    }
+
+    .popular-see-more {
+        margin-right: 50px;
+       }
+    
+
+   .section-feather {
+    flex-direction: column;
+    align-items: center;
+    margin: 50px 50px;
+    
+   }
+
+   
+   .feather-img {
+    align-items: center;
+    
+   }
+
+   .feather-img img{
+    width: 100%;
+    max-width: 300px;
+   
+   }
+
+   .feather-details {
+    margin: 5px 10px;
+    max-width: 300px;
+    text-align: center;
+    
+   }
+}
+
+/* Responsive for tablets (min-width:600 $ max-width:820px */
+
+@media (min-width:600px) and (max-width:820px) {
+    nav {
+        
+        flex-direction: column;
+        align-items: center;
+        
+        
+    }
+
+
+    .navbar-top-right ul{
+        margin: 20px 5px;
+    }
+    .navbar-bottom-left {
+        text-align: center;
+    }
+
+
+    .popular-container {
+        display: grid;
+        grid-template-columns:repeat(2, 1fr);
+        justify-content: center;
+    }
+
+    .section-feather {
+        flex-direction: column;
+        align-items: center;
+        margin: 50px 50px;
+       }
+
+       .feather-details {
+        text-align: center;
+        margin: 5px 150px;
+       }
+    
+
+  }   
+
